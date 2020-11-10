@@ -11,11 +11,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Welcome to my first app!")
-                .fontWeight(.bold)
+                .fontWeight(.semibold)
                 .foregroundColor(Color.green)
                 .padding()
-            Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+            Button(action: {
+                print("Button pressed!")
+            }) {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Hit me!")/*@END_MENU_TOKEN@*/
             }
         }
     }
